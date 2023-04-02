@@ -1,0 +1,76 @@
+\documentclass{report}
+\input{config}
+
+\renewcommand{\title}{
+    Glossario
+}
+
+\newcommand{\people}{
+    \normalsize
+    \begin{center}
+        \begin{tabularx}{7cm}{l | X}            
+            \textbf{Uso} & Esterno\\
+            \textbf{Destinatario} & Committente\\
+            & Cliente \\
+        \end{tabularx}
+    \end{center}
+}
+
+\fancypagestyle{plain}{%
+    \fancyhead{} % clear all header fields
+    \fancyhead[L]{\leftmark}
+    \fancyhead[R]{\textit{SWEasabi} \includegraphics[height=30pt]{\gassets global-assets/img/loghi/SWEasabi_compact_logo.png}}
+    \fancyfoot{} % clear all footer fields
+    \fancyfoot[L]{\thepage}
+    \fancyfoot[R]{Piano di Progetto}
+}
+
+\begin{document}
+
+\pagestyle{fancy}
+
+\fancyhead{} % clear all header fields
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\textit{SWEasabi} \includegraphics[height=30pt]{\gassets global-assets/img/loghi/SWEasabi_compact_logo.png}}
+\fancyfoot{} % clear all footer fields
+\fancyfoot[L]{\thepage}
+\fancyfoot[R]{Piano di progetto}
+
+
+\input{\gassets global-assets/tex/header}
+\thispagestyle{empty}
+\clearpage
+\pagenumbering{Roman}
+\input{registro-modifiche}
+
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+\input{contenuti/a}
+\input{contenuti/b}
+\input{contenuti/c}
+\input{contenuti/d}
+\input{contenuti/e}
+\input{contenuti/f}
+\input{contenuti/g}
+\input{contenuti/h}
+\input{contenuti/i}
+\input{contenuti/j}
+\input{contenuti/k}
+\input{contenuti/l}
+\input{contenuti/m}
+\input{contenuti/n}
+\input{contenuti/o}
+\input{contenuti/p}
+\input{contenuti/q}
+\input{contenuti/r}
+\input{contenuti/s}
+\input{contenuti/t}
+\input{contenuti/u}
+\input{contenuti/v}
+\input{contenuti/w}
+\input{contenuti/x}
+\input{contenuti/y}
+\input{contenuti/z}
+
+\end{document}
